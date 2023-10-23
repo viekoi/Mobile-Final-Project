@@ -31,7 +31,8 @@ public class RegisterActivity extends AppCompatActivity {
         signupPassword = findViewById(R.id.registerPassword);
         btnSignUp = findViewById(R.id.signUpButton);
         loginRedirectText = findViewById(R.id.txtLogin);
-        //
+
+        // handle khi bấm nút xác nhận đăng ký
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -64,6 +65,8 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             }
         });
+
+        // hanlde sự kiện bấm text trở lại activity login
         loginRedirectText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
